@@ -1,0 +1,37 @@
+{
+  "name": "esy-lwt",
+  "version": "9.9.9",
+  "description": "build lwt with esy on windows",
+  "license": "MIT",
+  "esy": {
+    "build": [
+      [
+          "ocaml",
+          "src/util/configure.ml",
+          "-use-libev",
+          "false"
+      ],
+      [
+          "jbuilder",
+          "build",
+          "-p",
+          "#{self.name}",
+          "-j",
+          "4"
+      ]
+    ],
+    "buildsInSource": "_build"
+  },
+  "peerDependencies": {
+    "ocaml": "~4.6.0"
+  },
+  "devDependencies": {
+    "ocaml": "~4.6.0"
+  }, 
+  "dependencies": {
+    "@opam/cppo": "*",
+    "@opam/jbuilder": "*",
+    "@opam/ocamlfind": "*",
+    "@opam/result": "*"
+  }
+}
