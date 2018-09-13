@@ -6,6 +6,17 @@
   "esy": {
     "build": [
       [
+          "ocamlc",
+          "-config"
+      ],
+      [
+          "env"
+      ],
+      [
+          "which",
+          "ocamlfind"
+      ],
+      [
           "ocaml",
           "src/util/configure.ml",
           "-use-libev",
