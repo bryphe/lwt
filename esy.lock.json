@@ -1,5 +1,5 @@
 {
-  "hash": "9e7e445c8edca30bc0a625ddafc56fc9",
+  "hash": "f6c4c2abb0cbed87cc606b10e3471572",
   "root": "lwt@path:.",
   "node": {
     "ocaml@4.6.5": {
@@ -22,7 +22,7 @@
         "opam": null
       },
       "dependencies": [
-        "@opam/cppo@opam:1.6.4", "@opam/dune@github:bryphe/dune#88cfc50",
+        "@opam/cppo@opam:1.6.4", "@opam/dune@github:bryphe/dune#1bbefc77",
         "@opam/ocamlfind@opam:1.8.0", "@opam/result@opam:1.3", "ocaml@4.6.5"
       ]
     },
@@ -118,15 +118,15 @@
         }
       },
       "dependencies": [
-        "@esy-ocaml/substs@0.0.1", "@opam/dune@github:bryphe/dune#88cfc50",
+        "@esy-ocaml/substs@0.0.1", "@opam/dune@github:bryphe/dune#1bbefc77",
         "@opam/ocamlfind@opam:1.8.0"
       ]
     },
-    "@opam/dune@github:bryphe/dune#88cfc50": {
+    "@opam/dune@github:bryphe/dune#1bbefc77": {
       "record": {
         "name": "@opam/dune",
-        "version": "github:bryphe/dune#88cfc50",
-        "source": "github:bryphe/dune#88cfc50",
+        "version": "github:bryphe/dune#1bbefc77",
+        "source": "github:bryphe/dune#1bbefc77",
         "files": [],
         "opam": null
       },
