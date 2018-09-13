@@ -1,5 +1,5 @@
 {
-  "hash": "e2c7c79f86c93138de847324d085e5a8",
+  "hash": "8707de64af7240110234c36b8a3c2bd0",
   "root": "lwt@path:.",
   "node": {
     "ocaml@4.6.5": {
@@ -22,7 +22,7 @@
         "opam": null
       },
       "dependencies": [
-        "@opam/cppo@opam:1.6.4", "@opam/jbuilder@opam:transition",
+        "@opam/cppo@opam:1.6.4", "@opam/dune@github:bryphe/dune#87a1993",
         "@opam/ocamlfind@opam:1.8.0", "@opam/result@opam:1.3", "ocaml@4.6.5"
       ]
     },
@@ -118,33 +118,19 @@
         }
       },
       "dependencies": [
-        "@esy-ocaml/substs@0.0.1", "@opam/dune@opam:1.1.1",
+        "@esy-ocaml/substs@0.0.1", "@opam/dune@github:bryphe/dune#87a1993",
         "@opam/ocamlfind@opam:1.8.0"
       ]
     },
-    "@opam/dune@opam:1.1.1": {
+    "@opam/dune@github:bryphe/dune#87a1993": {
       "record": {
         "name": "@opam/dune",
-        "version": "opam:1.1.1",
-        "source": [
-          "archive:https://opam.ocaml.org/archives/dune.1.1.1+opam.tar.gz#md5:7b15c22b89142b88d2544aefee550b09",
-          "archive:https://github.com/ocaml/dune/releases/download/1.1.1/dune-1.1.1.tbz#md5:d1da3d5a9cd9f450bb35724d16fbcaf2"
-        ],
+        "version": "github:bryphe/dune#87a1993",
+        "source": "github:bryphe/dune#87a1993",
         "files": [],
-        "opam": {
-          "name": "dune",
-          "version": "1.1.1",
-          "opam":
-            "opam-version: \"1.2\"\nname: \"dune\"\nversion: \"1.1.1\"\nmaintainer: \"opensource@janestreet.com\"\nauthors: \"Jane Street Group, LLC <opensource@janestreet.com>\"\nlicense: \"MIT\"\nhomepage: \"https://github.com/ocaml/dune\"\nbug-reports: \"https://github.com/ocaml/dune/issues\"\nconflicts: [\n  \"jbuilder\" {!= \"transition\"}\n]\navailable: ocaml-version >= \"4.02.3\"\nbuild: [\n  [\"ocaml\" \"configure.ml\" \"--libdir\" lib]\n  [\"ocaml\" \"bootstrap.ml\"]\n  [\"./boot.exe\" \"--release\" \"--subst\"] {pinned}\n  [\"./boot.exe\" \"--release\" \"-j\" jobs]\n]\ndev-repo: \"git+https://github.com/ocaml/dune.git\"",
-          "override": {
-            "build": [
-              [ "ocaml", "bootstrap.ml" ],
-              [ "./boot.exe", "--release", "-j", "4" ]
-            ]
-          }
-        }
+        "opam": null
       },
-      "dependencies": [ "@esy-ocaml/substs@0.0.1" ]
+      "dependencies": [ "ocaml@4.6.5" ]
     },
     "@opam/cppo@opam:1.6.4": {
       "record": {
