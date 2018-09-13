@@ -15,12 +15,12 @@
           "jbuilder",
           "build",
           "-p",
-          "#{self.name}",
+          "lwt",
           "-j",
           "4"
       ]
     ],
-    "buildsInSource": "_build"
+    "buildsInSource": true
   },
   "peerDependencies": {
     "ocaml": "~4.6.0"
