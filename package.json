@@ -47,7 +47,7 @@
     "ocaml": "~4.6.0"
   }, 
   "resolutions": {
-    "@opam/dune": "github:bryphe/dune#83cb8172"
+    "@opam/dune": "github:bryphe/dune#77b4f339"
   },
   "dependencies": {
     "@opam/cppo": "*",
