@@ -293,7 +293,7 @@ let android_target = ref false
 let ccomp_type = ref "cc"
 let libev_default = ref true
 let system = ref ""
-let debug = ref (try Sys.getenv "DEBUG" = "y" with Not_found -> false)
+let debug = ref true
 
 let dprintf fmt =
   if !debug then
