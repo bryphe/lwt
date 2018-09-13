@@ -10,7 +10,14 @@
           "-config"
       ],
       [
-          "env"
+          "ocamlfind",
+          "ocamlc",
+          "-c",
+          "lwt_stubdcf81a.c",
+          "-ccopt",
+          "-o",
+          "-ccopt",
+          "lwt_test.o"
       ],
       [
           "which",
