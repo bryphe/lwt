@@ -82,7 +82,7 @@
             "build": [
               [
                 "bash", "-c",
-                "#{os == 'windows' ? 'patch -p1 < files/_esy/findlib-1.8.0.patch' : 'true'}"
+                "#{os == 'windows' ? 'patch -p1 < _esy/findlib-1.8.0.patch' : 'true'}"
               ],
               [
                 "./configure", "-bindir", "#{self.bin}", "-sitelib",
